@@ -1,3 +1,5 @@
+>好用的话，可以给我点一下star吗，谢谢！
+
 # 使用方法（Railway）
 ## 第一步：fork本repository
 
