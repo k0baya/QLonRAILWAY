@@ -51,7 +51,7 @@
 而且Render不需要你主动generate域名，他会自动生成域名，当然你也可以绑定自己的域名。
 
 ## 注意
->Render的每月免费额度高达750小时，足够覆盖单个项目的整月使用。
+>Render的每月免费额度高达750小时，足够覆盖单个项目的整月使用。但是由于Render的特性，容器每隔一段时间会强制重启，且删除所有数据，如果需要使用Render部署青龙，需要在Dockerfile中使用`ADD`命令将数据在构筑时添加进去，类似于[xiaoya_alist_docker_on_render](https://github.com/k0baya/xiaoya_alist_docker_on_render/blob/main/Dockerfile)的方法，在仓库中新建一个data文件夹并把数据都存入，在Render构筑时又能将数据复制进去。如果这么使用，请不要直接Fork，务必自建私密仓库后Import本仓库再上传data以保证数据安全。
 
 # 容器保活
 
